@@ -141,10 +141,11 @@ To confirm the integrity of the ETL process and the resulting Star Schema, scree
 1.  **Dimension Keys:** That the primary keys (`_Key`) were correctly generated.
 2.  **Derived Data:** That the calculated (`TotalSales`) and derived (`ProductCategory`, synthetic `Age`) attributes were successfully loaded into the dimension tables.
 
-* [Screenshot: SalesFact Table] (c:\Users\nyaga\OneDrive\Pictures\Screenshots\Screenshot 2025-12-12 194134.png)
-* [Screenshot: CustomerDim Table] (c:\Users\nyaga\OneDrive\Pictures\Screenshots\Screenshot 2025-12-12 193756.png)
-* [Screenshot: ProductDim Table] (c:\Users\nyaga\OneDrive\Pictures\Screenshots\Screenshot 2025-12-12 194217.png)
+<img width="972" height="493" alt="screenshot_salesfact_sample" src="https://github.com/user-attachments/assets/495d2ac5-e320-4043-a735-90de6a5ce631" />
 
+<img width="922" height="525" alt="screenshot_customerdim_sample" src="https://github.com/user-attachments/assets/9647943e-b08d-4bea-98f3-07a6aeaf22ff" />
+
+<img width="427" height="279" alt="screenshot_productdim_sample" src="https://github.com/user-attachments/assets/bcd40e10-970d-4076-976e-8c2ace3df526" />
 
 ## **Task 3: OLAP Queries &  Analysis**
 
@@ -167,8 +168,7 @@ Three OLAP-style SQL queries were implemented to analyze sales performance.
 - *Kitchenware* provides stable, predictable revenue.
 
 ### **Visualization**
-*(Include in your report)*  
-![Total Sales by Country Bar Chart]("C:\Users\nyaga\OneDrive\Desktop\ENDSEM-DSA2040\sales_by_country_chart.png")
+<img width="1200" height="600" alt="sales_by_country_chart" src="https://github.com/user-attachments/assets/3d7d2de8-c5eb-4066-8213-0fec44c02735" />
 
 ---
 
@@ -182,13 +182,17 @@ Three OLAP-style SQL queries were implemented to analyze sales performance.
   - 20% Testing  
 
 * **Feature Relationships (Pairplot):** A Pairplot visualization was generated, revealing clear visual separation between the *Iris setosa* species and the other two.
- (![Pairplot of Iris Features](image.png))
- 
+
+<img width="1607" height="1476" alt="iris_pairplot" src="https://github.com/user-attachments/assets/c19461a9-3b87-4ac6-9ee4-0a87937058de" />
+
  * **Correlation Heatmap:** The heatmap confirmed strong positive correlations (e.g., between Petal Length and Petal Width).
-![Correlation Heatmap of Iris Features] (image-1.png)
+   
+<img width="745" height="528" alt="iris_correlation_heatmap" src="https://github.com/user-attachments/assets/c1aefe97-9b62-4071-9b10-3fac34ca1e74" />
 
 * **Outlier Detection (Boxplots):** Boxplots were used to examine the feature distributions, primarily identifying minor outliers in the **Sepal Width** dimension.
-    ![Boxplots for Outlier Check] (image-2.png)
+  
+<img width="846" height="547" alt="iris_boxplots_outliers" src="https://github.com/user-attachments/assets/f7b1e97f-611d-4a24-924e-61efe05cc293" />
+
 ---
 
 ## **Task 2: Clustering (K-Means)**
@@ -229,13 +233,18 @@ Two models were compared:
 
 ## Visualizations
 * **Optimal K Justification:** The Elbow plot clearly showed an optimal point at **$K=3$**, where the decrease in WCSS (Inertia) began to flatten significantly.
-    ![Elbow Method Plot for K-Means](image-3.png)
+<img width="686" height="470" alt="clustering_elbow_method" src="https://github.com/user-attachments/assets/e08b0c71-f8c1-48ef-8899-23ee39aa3026" />
+
 
 * **Cluster Visualization (Petal Features):** The scatter plot using Petal Length and Width confirmed the K-Means separation by color.
-    ![K-Means Clusters (k=3) vs. Actual Species](image-4.png)
+  
+<img width="768" height="547" alt="clustering_k3_visualization" src="https://github.com/user-attachments/assets/8dbd8fd5-bf1d-4372-9117-980b95d8eea8" />
+
 
 * **PCA Visualization:** The clusters were also mapped onto the two principal components (PC1 and PC2), which captures the maximum variance, further proving the clean separation.
-    ![K-Means Clusters (k=3) on 2 Principal Components(image-5.png)
+
+<img width="780" height="547" alt="clustering_k3_pca_visualization" src="https://github.com/user-attachments/assets/347ea5b3-09f2-40b2-868b-47537414af67" />
+
 ---
 
 ### **Part B: Association Rule Mining (Apriori)**
