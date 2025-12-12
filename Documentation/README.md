@@ -35,7 +35,7 @@ The data warehouse is modeled using a **Star Schema** centered on a single fact 
 | **Dim_Product** | `Product_Key (PK)`, `Product_Category` | Sales by product category. |
 | **Dim_Transaction** | `Transaction_Key (PK)`, `Transaction_ID` | Tracking unique transaction instances. |
 
-![Star Schema] ("C:\Users\nyaga\OneDrive\Desktop\ENDSEM-DSA2040\Star Schema.drawio.png")
+<img width="907" height="639" alt="star-schema-diagram" src="https://github.com/user-attachments/assets/ab705144-8498-497c-b56f-212f4b4987d5" />
 ---
 
 ## 2. Explanation: Star Schema Choice
@@ -104,7 +104,7 @@ CREATE TABLE Fact_Sales (
     FOREIGN KEY (Transaction_Key) REFERENCES Dim_Transaction(Transaction_Key)
 );
 
-
+```
 ## **Task 2: ETL Process Implementation**
 
 The ETL process was implemented using Python in the `etl_retail.py` script.
